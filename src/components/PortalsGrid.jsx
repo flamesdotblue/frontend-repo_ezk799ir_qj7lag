@@ -1,4 +1,4 @@
-import { User, Wrench, ShieldCheck, MessageSquare, MapPin, Clock } from "lucide-react";
+import { User, Wrench, Shield, MessageSquare, MapPin, Clock } from "lucide-react";
 
 const Card = ({ icon: Icon, title, children, anchor }) => (
   <a href={anchor} className="group block rounded-2xl border bg-white p-6 shadow-sm hover:shadow-md transition">
@@ -18,7 +18,7 @@ const Card = ({ icon: Icon, title, children, anchor }) => (
       <li className="flex items-center gap-2 text-gray-700"><MapPin className="h-4 w-4 text-orange-600" /> Live location</li>
       <li className="flex items-center gap-2 text-gray-700"><MessageSquare className="h-4 w-4 text-orange-600" /> In-app chat</li>
       <li className="flex items-center gap-2 text-gray-700"><Clock className="h-4 w-4 text-orange-600" /> Real-time status</li>
-      <li className="flex items-center gap-2 text-gray-700"><ShieldCheck className="h-4 w-4 text-orange-600" /> Verified access</li>
+      <li className="flex items-center gap-2 text-gray-700"><Shield className="h-4 w-4 text-orange-600" /> Verified access</li>
     </ul>
   </a>
 );
@@ -38,7 +38,7 @@ export default function PortalsGrid() {
           <Card icon={Wrench} title="Service Provider Portal" anchor="#provider">
             Manage requests in real-time, navigate to the user, update status, chat, and track performance with simple tools.
           </Card>
-          <Card icon={ShieldCheck} title="Admin Portal" anchor="#admin">
+          <Card icon={Shield} title="Admin Portal" anchor="#admin">
             Oversee the platform, verify providers, manage users and requests, and access analytics for continuous improvement.
           </Card>
         </div>

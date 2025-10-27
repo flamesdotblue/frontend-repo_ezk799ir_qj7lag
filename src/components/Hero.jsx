@@ -1,4 +1,4 @@
-import { MapPin, Wrench, Fuel, Car } from "lucide-react";
+import { MapPin, Wrench, Car } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -15,7 +15,7 @@ export default function Hero() {
               Get help fast when your vehicle lets you down
             </h1>
             <p className="mt-4 text-lg text-gray-600 max-w-prose">
-              ResQMe connects you with trusted local garages for towing, on-site repair, fuel delivery, and more. Stay safe, track progress, and chat in real-time.
+              ResQMe connects you with trusted local garages for towing, on-site repair, and more. Stay safe, track progress, and chat in real-time.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a href="#user" className="inline-flex items-center justify-center rounded-lg bg-orange-600 text-white px-5 py-3 font-medium shadow hover:bg-orange-700">
@@ -48,8 +48,8 @@ export default function Hero() {
             <div className="aspect-[4/3] rounded-2xl bg-gradient-to-tr from-orange-100 via-rose-100 to-amber-100 border shadow-inner flex items-center justify-center">
               <div className="grid grid-cols-2 gap-4 p-6 w-full max-w-md">
                 <FeaturePill icon={<Wrench className=\"h-4 w-4\" />} label="On-site Mechanic" />
-                <FeaturePill icon={<Fuel className=\"h-4 w-4\" />} label="Fuel Delivery" />
                 <FeaturePill icon={<Car className=\"h-4 w-4\" />} label="Towing" />
+                <FeaturePill icon={<Wrench className=\"h-4 w-4\" />} label="Flat Tire Repair" />
                 <FeaturePill icon={<MapPin className=\"h-4 w-4\" />} label="Live Tracking" />
               </div>
             </div>
