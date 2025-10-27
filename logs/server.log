@@ -3,32 +3,7 @@
 > vite
 
 
-  VITE v5.4.20  ready in 278 ms
+  VITE v5.4.20  ready in 310 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.11.138:3000/
-5:37:50 PM [vite] Pre-transform error: Transform failed with 1 error:
-/home/workspace/src/components/Hero.jsx:50:53: ERROR: Expected "{" but found "\\"
-5:37:51 PM [vite] Internal server error: Transform failed with 1 error:
-/home/workspace/src/components/Hero.jsx:50:53: ERROR: Expected "{" but found "\\"
-  Plugin: vite:esbuild
-  File: /home/workspace/src/components/Hero.jsx:50:53
-  
-  Expected "{" but found "\\"
-  48 |              <div className="aspect-[4/3] rounded-2xl bg-gradient-to-tr from-orange-100 via-rose-100 to-amber-100 border shadow-inner flex items-center justify-center">
-  49 |                <div className="grid grid-cols-2 gap-4 p-6 w-full max-w-md">
-  50 |                  <FeaturePill icon={<Wrench className=\"h-4 w-4\" />} label="On-site Mechanic" />
-     |                                                       ^
-  51 |                  <FeaturePill icon={<Car className=\"h-4 w-4\" />} label="Towing" />
-  52 |                  <FeaturePill icon={<Wrench className=\"h-4 w-4\" />} label="Flat Tire Repair" />
-  
-      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
-      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
-      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
-      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
-      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
-      at Socket.emit (node:events:508:28)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
-      at Readable.push (node:internal/streams/readable:390:5)
-      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)

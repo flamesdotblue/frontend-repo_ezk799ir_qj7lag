@@ -1,20 +1,27 @@
+import Spline from "@splinetool/react-spline";
 import { MapPin, Wrench, Car } from "lucide-react";
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-orange-50 via-white to-white pointer-events-none" />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8 relative">
+      {/* 3D cover background */}
+      <div className="absolute inset-0">
+        <Spline scene="https://prod.spline.design/4Tf9WOIaWs6LOezG/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+      </div>
+      {/* Soft gradient overlay so text stays readable; allow interaction with Spline below */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/60 to-white pointer-events-none" />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full border bg-white px-3 py-1 text-xs font-medium shadow-sm">
+            <span className="inline-flex items-center gap-2 rounded-full border bg-white/90 px-3 py-1 text-xs font-medium shadow-sm">
               <span className="inline-block h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
               Live roadside help, on-demand
             </span>
             <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
               Get help fast when your vehicle lets you down
             </h1>
-            <p className="mt-4 text-lg text-gray-600 max-w-prose">
+            <p className="mt-4 text-lg text-gray-700 max-w-prose">
               ResQMe connects you with trusted local garages for towing, on-site repair, and more. Stay safe, track progress, and chat in real-time.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
@@ -26,31 +33,31 @@ export default function Hero() {
               </a>
             </div>
             <dl className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
-              <div className="rounded-xl bg-white p-4 border shadow-sm">
+              <div className="rounded-xl bg-white/90 backdrop-blur p-4 border shadow-sm">
                 <dt className="text-gray-500">Coverage</dt>
                 <dd className="mt-1 font-semibold">City-wide</dd>
               </div>
-              <div className="rounded-xl bg-white p-4 border shadow-sm">
+              <div className="rounded-xl bg-white/90 backdrop-blur p-4 border shadow-sm">
                 <dt className="text-gray-500">Avg. response</dt>
                 <dd className="mt-1 font-semibold">15 minutes</dd>
               </div>
-              <div className="rounded-xl bg-white p-4 border shadow-sm">
+              <div className="rounded-xl bg-white/90 backdrop-blur p-4 border shadow-sm">
                 <dt className="text-gray-500">Verified garages</dt>
                 <dd className="mt-1 font-semibold">250+</dd>
               </div>
-              <div className="rounded-xl bg-white p-4 border shadow-sm">
+              <div className="rounded-xl bg-white/90 backdrop-blur p-4 border shadow-sm">
                 <dt className="text-gray-500">Happy drivers</dt>
                 <dd className="mt-1 font-semibold">10k+</dd>
               </div>
             </dl>
           </div>
           <div className="relative">
-            <div className="aspect-[4/3] rounded-2xl bg-gradient-to-tr from-orange-100 via-rose-100 to-amber-100 border shadow-inner flex items-center justify-center">
+            <div className="aspect-[4/3] rounded-2xl bg-gradient-to-tr from-orange-100/80 via-rose-100/80 to-amber-100/80 border shadow-inner flex items-center justify-center">
               <div className="grid grid-cols-2 gap-4 p-6 w-full max-w-md">
-                <FeaturePill icon={<Wrench className=\"h-4 w-4\" />} label="On-site Mechanic" />
-                <FeaturePill icon={<Car className=\"h-4 w-4\" />} label="Towing" />
-                <FeaturePill icon={<Wrench className=\"h-4 w-4\" />} label="Flat Tire Repair" />
-                <FeaturePill icon={<MapPin className=\"h-4 w-4\" />} label="Live Tracking" />
+                <FeaturePill icon={<Wrench className="h-4 w-4" />} label="On-site Mechanic" />
+                <FeaturePill icon={<Car className="h-4 w-4" />} label="Towing" />
+                <FeaturePill icon={<Wrench className="h-4 w-4" />} label="Flat Tire Repair" />
+                <FeaturePill icon={<MapPin className="h-4 w-4" />} label="Live Tracking" />
               </div>
             </div>
           </div>
