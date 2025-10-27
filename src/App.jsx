@@ -2,12 +2,14 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import PortalsGrid from "./components/PortalsGrid";
 import Footer from "./components/Footer";
+import BackendStatus from "./components/BackendStatus";
 import { ArrowRight, MessageSquare, MapPin, Star } from "lucide-react";
 
 export default function App() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <Navbar />
+      <BackendStatus />
       <main>
         <Hero />
         <PortalsGrid />
